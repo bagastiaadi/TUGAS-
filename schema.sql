@@ -12,9 +12,3 @@ CREATE TABLE IF NOT EXISTS books (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP
 );
-
-INSERT INTO books (title, author, year, category, cover, status)
-VALUES
-('Teknologi Informasi Modern', 'Rizky Saputra', 2021, 'Teknologi', 'uploads/ti.png', 'tersedia'),
-('Sejarah Nusantara', 'Made Hartawan', 2019, 'Sejarah', 'uploads/sejarah.png', 'dipinjam'),
-('Pendidikan Anak Usia Dini', 'Rini Utami', 2023, 'Pendidikan', 'uploads/paud.png', 'tersedia');
