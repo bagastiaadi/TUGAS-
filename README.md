@@ -1,3 +1,7 @@
+## Nama : I Made Bagastia Adi Pramana
+## NIM  : 240030157
+## Kelas : BB243
+
 # 1. Deskripsi Aplikasi
 
 Aplikasi ini adalah sistem sederhana untuk mengelola data buku menggunakan PHP Native (tanpa framework) dan database MySQL
