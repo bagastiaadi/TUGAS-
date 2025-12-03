@@ -11,7 +11,7 @@ $books = $book->getAll();
 <p><a href="create.php">Tambah Buku</a></p>
 <table border="1" cellpadding="6" cellspacing="0">
     <tr>
-        <th>ID</th><th>Judul</th><th>Penulis</th><th>Tahun</th><th>Kategori</th><th>Cover</th><th>Status</th>
+        <th>ID</th><th>Judul</th><th>Penulis</th><th>Tahun</th><th>Kategori</th><th>Cover</th><th>Status</th><th>Aksi</th>
     </tr>
     <?php if ($books): foreach($books as $b): ?>
     <tr>
@@ -26,6 +26,10 @@ $books = $book->getAll();
             <?php endif; ?>
         </td>
         <td><?= htmlspecialchars($b['status']) ?></td>
+        <td>
+            <a href="edit.php?id=<?= urlencode($b['id']) ?>">Edit</a> |
+            <a href="delete.php?id=<?= urlencode($b['id']) ?>" onclick="return confirm('Hapus data ini?')">Hapus</a>
+        </td>
     </tr>
     <?php endforeach; else: ?>
     <tr><td colspan="8">Tidak ada data.</td></tr>
